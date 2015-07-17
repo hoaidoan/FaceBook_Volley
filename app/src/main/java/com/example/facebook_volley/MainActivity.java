@@ -35,6 +35,7 @@ public class MainActivity extends SlidingFragmentActivity {
     int icons[] = {R.drawable.tab1, R.drawable.tab2, R.drawable.tab3, R.drawable.tab4, R.drawable.tab5};
     String titles[] = {"New Feed", "Request", "Messenger", "Notification", "More"};
     BadgeView[] notification = new BadgeView[4];
+    int a;
 
 
 

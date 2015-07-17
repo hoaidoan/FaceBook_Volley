@@ -26,6 +26,8 @@ public class FeedItem implements Serializable{
         this.url = url;
     }
 
+
+
     public String getImage() {
         return image;
     }

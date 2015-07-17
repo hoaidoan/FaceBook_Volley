@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/txttennguoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_below="@+id/txttennguoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hoạt động 0 phút trước"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eeeeee"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/realtncn2"
+        android:layout_below="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Thêm các tin nhắn trước đây..."
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"
+          android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/realtncn2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eeeeee" />
+
+        <ListView
+        android:layout_below="@+id/realtncn2"
+        android:id="@+id/listtndialog"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+         android:background="#fff">
+        </ListView>
+
+    <RelativeLayout
+        android:id="@+id/realanh2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/realanh"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imganh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_camerax"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/edtcmtn"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/realcmtn"
+            android:layout_toRightOf="@+id/edtcmtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

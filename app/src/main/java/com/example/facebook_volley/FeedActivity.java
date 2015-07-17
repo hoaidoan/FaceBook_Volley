@@ -61,6 +61,9 @@ public class FeedActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.feed_item_list, container, false);
 
+        View header=inflater.inflate(R.layout.new_header,null);
+
+
         mQuickReturnView = (LinearLayout) v.findViewById(R.id.footer); // lay gia tri footer
 
         listView = (QuickReturnListView) v.findViewById(R.id.list);
@@ -68,6 +71,7 @@ public class FeedActivity extends Fragment {
         feedItems = new ArrayList<FeedItem>();
 
         listAdapter = new FeedListAdapter(getActivity(), feedItems);
+        listView.addHeaderView(header);
         listView.setAdapter(listAdapter);
 
 //        listView.setOnRefreshListener(new PullToRefreshListView.OnRefreshListener() {

@@ -84,7 +84,7 @@
             android:layout_marginRight="1dp"
             android:background="@color/white"
             android:scaleType="fitXY"
-            android:visibility="visible" />
+            android:visibility="invisible" />
 
 
 

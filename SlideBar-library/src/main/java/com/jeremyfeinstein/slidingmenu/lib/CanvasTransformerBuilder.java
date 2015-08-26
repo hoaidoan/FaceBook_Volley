@@ -7,6 +7,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.CanvasTransformer;
 
 public class CanvasTransformerBuilder {
 
+
 	private CanvasTransformer mTrans;
 
 	private static Interpolator lin = new Interpolator() {
